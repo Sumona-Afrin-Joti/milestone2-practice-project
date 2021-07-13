@@ -21,13 +21,13 @@ main{
     grid-template-columns:1fr 3fr;
 }
 .side-section{
-  margin-top: 6%;
+    margin-top: 6%;
    position: fixed;
    top:0;
 }
 .beautiful-places{
     width:100%;
-    height: 1100px;
+    height: 500px;
     overflow: scroll;
     overflow-x: hidden;
     
@@ -54,20 +54,22 @@ main{
     margin-top: 4%;
     color:#562EFF;
 }
-.player-image{
-    width:56px;
-    height:56px;
-}
-.player{
-    display: flex;
-    align-items: center;
-    
-}
 .players{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap:20%;
 }
+
+.player{
+    display: flex;
+    align-items: center;
+    
+}
+.player-image{
+    width:56px;
+    height:56px;
+}
+
 .player-name{
     margin-left: 5%;
 }
@@ -173,9 +175,109 @@ a{
 }
 /* for mobile */
 @media only screen and (max-width:688px){
-    main{
-       display: flex;
+    .nav{
+        margin-left: 0;
+    }
+    .side-section{
+        height: auto;
+        width: 100px;
+        margin-top: 100px;
+        position: fixed;
+        top:120;
+    }
+    .beautiful-places{
+        width:100%;
+        height: 800px;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+    .top{
+        margin-top: 100px;
+    }
+    .section-title{
+        text-align: center;
+    }
+     .player{
        flex-direction: column;
+     }
+   .players{
+    grid-template-columns: 1fr;
+    gap:2%
+    }
+   
+     hr{
+      margin-top: 60px;
+    }
+   .blogs{
+       grid-template-columns: 1fr;
+       gap:15px;
+   }
+   .blog{
+       flex-direction: column;
+       
+   }
+   .blog-info h3,p{
+       text-align: center;
+   }
+   .courses{
+       grid-template-columns: 1fr;
+       gap:10px;
+   }
+   .course{
+       flex-direction: column;
+   }
+   
+}
+
+/* for tablet */
+@media only screen and (min-width:668px) and(max-width:992px){
+
+    .nav{
+        margin-left: 0;
+    }
+    .side-section{
+        margin-top: 100px;
+        position: fixed;
+        top:120;
+    }
+    .top{
+        margin-top: 75px;
+    }
+    .players{
+        grid-template-columns:repeat(2,1fr) ;
+        gap:2%
+    }
+    .section2{
+       margin-left: 60px;
+        padding:10%;
+    }
+    hr{
+        margin-top: 60px;
+    }
+     .blogs{
+         grid-template-columns: 1fr;
+         gap:15px;
+     }
+     .blog{
+         flex-direction: column;
+         
+     }
+     .blog-info h3,p{
+         text-align: center;
+     }
+     .courses{
+         grid-template-columns: 1fr;
+         gap:10px;
+     }
+     .course{
+         flex-direction: column;
+         height: 300px;
+     }
+     .section-title{
+        text-align: center;
+    }
+    .clock{
+        margin-left: 120px;
     }
 }
 
