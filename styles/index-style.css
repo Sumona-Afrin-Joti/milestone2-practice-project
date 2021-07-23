@@ -187,7 +187,7 @@ a{
     }
     .beautiful-places{
         width:100%;
-        height: 800px;
+        height: 550px;
         overflow: scroll;
         overflow-x: hidden;
     }
